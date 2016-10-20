@@ -35,9 +35,14 @@ angular.module("exampleApp",[])
             {name:"Lamp", price: 28.31}
         ];
 
-        $scope.changePrices = function () {
+        $scope.changePricesUp = function () {
             for (var i=0;i<$scope.items.length;i++) {
                 $scope.items[i].price++;
+            }
+        }
+        $scope.changePricesLow = function () {
+            for (var i=0;i<$scope.items.length;i++) {
+                $scope.items[i].price--;
             }
         }
     });
